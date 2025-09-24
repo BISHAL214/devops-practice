@@ -24,5 +24,22 @@ app.get('/', (req, res) => {
   logger.info('Hello from devops practice api');
   res.status(200).send('Hello from devops practice api');
 });
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+    upTime: process.uptime(),
+  });
+});
+app.get('/api', (req, res) => {
+  res.status(200).json({
+    message: 'Welcome to DevOps Practice API',
+    version: '1.0.0',
+    //  documentation: '<URL>',
+  });
+});
+
+// auth routes
+app.use('/api/v1/auth', (await import('#routes/auth.routes.js')).default);
 
 export default app;
