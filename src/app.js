@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
+import { securityMiddleware } from '#middleware/security.middleware.js';
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(
     stream: { write: message => logger.info(message.trim()) },
   })
 );
+app.use(securityMiddleware);
 
 // routes
 app.get('/', (req, res) => {

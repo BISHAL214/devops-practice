@@ -34,3 +34,27 @@
 {"level":"info","message":"User signed in with email: mondalbishal716@gmail.com, role: user","service":"devops-practice-api"}
 {"level":"info","message":"::1 - - [25/Sep/2025:06:24:52 +0000] \"POST /api/v1/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
 {"level":"info","message":"::1 - - [25/Sep/2025:06:28:21 +0000] \"POST /api/v1/auth/sign-out HTTP/1.1\" 200 33 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:02:09 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:02:48 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:02:49 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:02:49 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:02:49 +0000] \"GET /health HTTP/1.1\" 200 76 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/health","service":"devops-practice-api","userAgent":"HoppscotchKernel/0.2.0"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:02:50 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/health","service":"devops-practice-api","userAgent":"HoppscotchKernel/0.2.0"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:02:52 +0000] \"GET /health HTTP/1.1\" 403 51 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:03:56 +0000] \"GET /api HTTP/1.1\" 200 62 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:03:57 +0000] \"GET /api HTTP/1.1\" 200 62 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:03:58 +0000] \"GET /api HTTP/1.1\" 200 62 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:03:58 +0000] \"GET /api HTTP/1.1\" 200 62 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:03:58 +0000] \"GET /api HTTP/1.1\" 200 62 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/api","service":"devops-practice-api","userAgent":"HoppscotchKernel/0.2.0"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:03:59 +0000] \"GET /api HTTP/1.1\" 403 51 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/api","service":"devops-practice-api","userAgent":"HoppscotchKernel/0.2.0"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:04:00 +0000] \"GET /api HTTP/1.1\" 403 51 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/api","service":"devops-practice-api","userAgent":"HoppscotchKernel/0.2.0"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:04:09 +0000] \"GET /api HTTP/1.1\" 403 51 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/api","service":"devops-practice-api","userAgent":"HoppscotchKernel/0.2.0"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:04:11 +0000] \"GET /api HTTP/1.1\" 403 51 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
+{"ip":"::1","level":"warn","message":"Rate limit exceeded","method":"GET","path":"/api","service":"devops-practice-api","userAgent":"HoppscotchKernel/0.2.0"}
+{"level":"info","message":"::1 - - [25/Sep/2025:07:04:12 +0000] \"GET /api HTTP/1.1\" 403 51 \"-\" \"HoppscotchKernel/0.2.0\"","service":"devops-practice-api"}
