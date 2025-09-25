@@ -43,5 +43,6 @@ app.get('/api', (req, res) => {
 
 // auth routes
 app.use('/api/v1/auth', (await import('#routes/auth.routes.js')).default);
+app.use('/api/v1/users', (await import('#routes/users.routes.js')).default);
 
 export default app;
