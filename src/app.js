@@ -50,9 +50,9 @@ app.use((req, res) => {
 });
 
 // global error handler
-app.use((err, req, res, next) => {
-  logger.error(err.stack);
-  res.status(500).json({ message: 'Internal Server Error' });
-});
+// app.use((err, _, res, _) => {
+//   logger.error(err.stack);
+//   res.status(500).json({ message: 'Internal Server Error' });
+// });
 
 export default app;
