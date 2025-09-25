@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  # 1. Neon Local - PostgreSQL-compatible database for development and testing
+  neon-local:
+    image: neondatabase/neon_local:latest
+    container_name: devops-practice-neon-local
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env.development
+    volumes:
+      - ./.neon_local/:/tmp/.neon_local
+      - ./.git/HEAD:/tmp/.git/HEAD:ro,consistent
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-h", "localhost", "-p", "5432", "-U", "neon" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    networks:
+      - devops-practice-network
+  # Node.js application service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: devops-practice-app-dev
+    ports:
+      - "${PORT:-4000}:4000"
+    env_file:
+      - .env.development
+    volumes:
+      - .:/app
+      - /app/node_modules
+      # mount logs directory
+      - ./logs:/app/logs
+    depends_on:
+      neon-local:
+        condition: service_healthy
+    networks:
+      - devops-practice-network
+    restart: unless-stopped
+networks:
+  devops-practice-network:
+    driver: bridge
