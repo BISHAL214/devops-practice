@@ -45,4 +45,14 @@ app.get('/api', (req, res) => {
 app.use('/api/v1/auth', (await import('#routes/auth.routes.js')).default);
 app.use('/api/v1/users', (await import('#routes/users.routes.js')).default);
 
+app.use((req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
+
+// global error handler
+app.use((err, req, res, next) => {
+  logger.error(err.stack);
+  res.status(500).json({ message: 'Internal Server Error' });
+});
+
 export default app;

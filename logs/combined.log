@@ -140,3 +140,9 @@
 {"level":"info","message":"::1 - - [25/Sep/2025:09:07:53 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"devops-practice-api"}
 {"level":"info","message":"::1 - - [25/Sep/2025:09:08:24 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"devops-practice-api"}
 {"level":"info","message":"::1 - - [25/Sep/2025:09:08:54 +0000] \"GET /health HTTP/1.1\" 200 77 \"-\" \"-\"","service":"devops-practice-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Sep/2025:09:26:37 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"devops-practice-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Sep/2025:09:26:37 +0000] \"GET /api HTTP/1.1\" 200 62 \"-\" \"-\"","service":"devops-practice-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Sep/2025:09:26:37 +0000] \"GET /nonexsistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"devops-practice-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Sep/2025:09:27:19 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"devops-practice-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Sep/2025:09:27:19 +0000] \"GET /api HTTP/1.1\" 200 62 \"-\" \"-\"","service":"devops-practice-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [25/Sep/2025:09:27:20 +0000] \"GET /nonexsistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"devops-practice-api"}
